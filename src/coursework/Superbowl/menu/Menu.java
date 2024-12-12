@@ -6,10 +6,10 @@ public class Menu {
     static String menuStartSplit = "+-----------------------------------+%n";
     static String menuMiddleSplit = "+-----------------------------------+%n";
     static String menuEndSplit = "+-----------------------------------+%n";
-    
+
     static String menuSearch = "|              Search               |%n";
     static String menuSuperbowl = "|        NFL Superbowls Menu        |%n";
-    
+
     static String list = "| List .......................... 1 |%n";
     static String select = "| Select ........................ 2 |%n";
     static String search = "| Search ........................ 3 |%n";
@@ -17,8 +17,23 @@ public class Menu {
     static String team = "| Team ............................ |%n";
     static String state = "| State ........................... |%n";
     static String mainMenu = "| Main Menu ....................... |%n";
-    
+
     static String menuChoice = "Enter choice: ";
+
+    /*
+     * Max Length of things in superbowls.txt:
+     * year = 4
+     * date = 8
+     * number = 7
+     * winning team = 20
+     * winning points = 2
+     * losing team = 20
+     * losing points = 2
+     * mvp = 24
+     * stadium = 29
+     * city = 15
+     * state = 10
+     */
 
     public static void superbowlMenu() {
         System.out.printf(menuStartSplit);
@@ -31,7 +46,7 @@ public class Menu {
         System.out.printf(menuEndSplit);
         System.out.printf(menuChoice);
     }
-    
+
     public static void searchMenu() {
         System.out.printf(menuStartSplit);
         System.out.printf(menuSearch);
